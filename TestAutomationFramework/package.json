@@ -1,0 +1,19 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "description": "A library for automating browser interactions using Selenium WebDriver.",
+  "main": "dist/my-library.js",
+  "module": "src/my-library.js",
+  "type": "module",
+  
+  "keywords": [
+    "selenium",
+    "webdriver",
+    "browser",
+    "automation"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.8.2"
+  }
+}
