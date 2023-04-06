@@ -12,7 +12,7 @@ export async function generate(name, performance) {
     "\n\n" +
       boxen(
         `After running ${chalk.blue(`"${name}"`)} for ${chalk.red(
-          `${(performance / 1000).toFixed(2)} s`
+          `${(performance / 1000).toFixed(2)}s`
         )} it ended with ${chalk.green("success")}.  `,
         {
           title: "Results",
