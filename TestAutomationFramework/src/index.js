@@ -1,10 +1,10 @@
-import { goToUrl } from "./func/others/goToUrl.js";
-import { getUrl } from "./func/others/getUrl.js";
+import { getUrl, goToUrl, scrollToElement } from "./func/index.js";
 import { finalize, generate } from "./util.js";
 
 export const taf = {
   goToUrl,
   getUrl,
+  scrollToElement,
 };
 
 export async function test(name, callback) {
