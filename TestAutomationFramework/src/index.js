@@ -1,6 +1,8 @@
-import { goToUrl } from "./func/others/goToUrl.js";
-import { getUrl } from "./func/others/getUrl.js";
+// imports
 import { finalize } from "./util.js";
+import { getUrl, goToUrl } from "./func/index.js";
+
+//exports
 export const taf = {
   goToUrl,
   getUrl,
@@ -11,6 +13,7 @@ export async function test(name, callback) {
 
   //call callback
   await callback();
+
   //clear self
   finalize();
 }

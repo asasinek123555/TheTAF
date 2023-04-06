@@ -1,4 +1,4 @@
 import { driver } from "../../util.js";
-export async function getUrl() {
+export const getUrl = async () => {
   return await driver.getCurrentUrl();
-}
+};
