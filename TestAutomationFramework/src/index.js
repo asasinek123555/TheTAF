@@ -12,6 +12,7 @@ import {
   isEnabled,
   isVisible,
   countVisibleElements,
+  findAndClick,
 } from "./func/index.js";
 
 export const taf = {
@@ -25,6 +26,7 @@ export const taf = {
   isEnabled,
   isVisible,
   countVisibleElements,
+  findAndClick,
 };
 
 export async function test(name, callback) {
