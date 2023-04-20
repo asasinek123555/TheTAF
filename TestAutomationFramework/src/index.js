@@ -1,32 +1,21 @@
 // imports
 import { finalize } from "./util.js";
 import { generate } from "./util.js";
-import {
-  getUrl,
-  goToUrl,
-  scrollToElement,
-  getValueAttribute,
-  getAllElements,
-  areElementsDisplayed,
-  isSelected,
-  isEnabled,
-  isVisible,
-  countVisibleElements,
-  findAndClick,
-} from "./func/index.js";
+
+import { getUrl, goToUrl, 
+  scrollToElement, getValueAttribute,
+  getAllElements, areElementsDisplayed,
+  isSelected, isEnabled, isVisible,
+  countVisibleElements, findAndSelect,
+  findAndSelectAll, findAndClick} from "./func/index.js";
 
 export const taf = {
-  goToUrl,
-  getUrl,
-  scrollToElement,
-  getValueAttribute,
-  getAllElements,
-  areElementsDisplayed,
-  isSelected,
-  isEnabled,
-  isVisible,
-  countVisibleElements,
-  findAndClick,
+  goToUrl, getUrl,
+  scrollToElement, getValueAttribute,
+  getAllElements, areElementsDisplayed,
+  isSelected, isEnabled, isVisible,
+  countVisibleElements, findAndSelect,
+  findAndSelectAll, findAndClick
 };
 
 export async function test(name, callback) {
