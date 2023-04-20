@@ -35,6 +35,7 @@ export async function test(name, callback) {
     //call callback and measure time
     await callback();
     end = performance.now();
+    state = 1;
   } catch (error) {
     state = 0;
     end = performance.now();
