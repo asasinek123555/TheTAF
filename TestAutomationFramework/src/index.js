@@ -5,15 +5,16 @@ import { getUrl, goToUrl,
   scrollToElement, getValueAttribute,
   getAllElements, areElementsDisplayed,
   isSelected, isEnabled, isVisible,
-  countVisibleElements } from "./func/index.js";
+  countVisibleElements, findAndSelect,
+  findAndSelectAll } from "./func/index.js";
 
 export const taf = {
   goToUrl, getUrl,
   scrollToElement, getValueAttribute,
   getAllElements, areElementsDisplayed,
   isSelected, isEnabled, isVisible,
-  countVisibleElements
-
+  countVisibleElements, findAndSelect,
+  findAndSelectAll
 };
 
 export async function test(name, callback) {
