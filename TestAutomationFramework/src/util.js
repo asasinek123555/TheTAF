@@ -7,15 +7,13 @@ export async function finalize() {
   await driver.quit();
 }
 
-export async function generate(name, performance, state) {
+export async function generate(name, performance) {
   console.log(
     "\n\n" +
       boxen(
-        `After running ${chalk.blue(`"${name}"`)} for ${chalk.yellow(
+        `After running ${chalk.blue(`"${name}"`)} for ${chalk.red(
           `${(performance / 1000).toFixed(2)}s`
-        )} it ended with ${
-          state === 1 ? chalk.green("success") : chalk.red("error")
-        }.  `,
+        )} it ended with ${chalk.green("success")}.  `,
         {
           title: "Results",
           titleAlignment: "center",
