@@ -1,6 +1,6 @@
-
 // imports
 import { finalize } from "./util.js";
+import { generate } from "./util.js";
 import { getUrl, goToUrl, 
   scrollToElement, getValueAttribute,
   getAllElements, areElementsDisplayed,
@@ -13,18 +13,25 @@ export const taf = {
   getAllElements, areElementsDisplayed,
   isSelected, isEnabled, isVisible,
   countVisibleElements
+
 };
 
 export async function test(name, callback) {
-  //TODO save test name
+  let start, end, state;
 
-  //call callback and measure time
-  const start = performance.now();
-  await callback();
-  const end = performance.now();
-
-  generate(name, end - start);
-  //clear self
-
-  finalize();
+  try {
+    start = performance.now();
+    //call callback and measure time
+    await callback();
+    end = performance.now();
+  } catch (error) {
+    state = 0;
+    end = performance.now();
+  } finally {
+    state = 1;
+    console.log(end, start);
+    generate(name, end - start, state);
+    //clear self
+    finalize();
+  }
 }
