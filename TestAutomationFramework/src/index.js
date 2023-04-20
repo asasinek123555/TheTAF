@@ -1,12 +1,13 @@
 // imports
 import { finalize } from "./util.js";
 import { generate } from "./util.js";
+
 import { getUrl, goToUrl, 
   scrollToElement, getValueAttribute,
   getAllElements, areElementsDisplayed,
   isSelected, isEnabled, isVisible,
   countVisibleElements, findAndSelect,
-  findAndSelectAll } from "./func/index.js";
+  findAndSelectAll, findAndClick} from "./func/index.js";
 
 export const taf = {
   goToUrl, getUrl,
@@ -14,7 +15,7 @@ export const taf = {
   getAllElements, areElementsDisplayed,
   isSelected, isEnabled, isVisible,
   countVisibleElements, findAndSelect,
-  findAndSelectAll
+  findAndSelectAll, findAndClick
 };
 
 export async function test(name, callback) {
@@ -25,12 +26,11 @@ export async function test(name, callback) {
     //call callback and measure time
     await callback();
     end = performance.now();
+    state = 1;
   } catch (error) {
     state = 0;
     end = performance.now();
   } finally {
-    state = 1;
-    console.log(end, start);
     generate(name, end - start, state);
     //clear self
     finalize();
