@@ -1,19 +1,30 @@
 // imports
 import { finalize } from "./util.js";
 import { generate } from "./util.js";
-import { getUrl, goToUrl, 
-  scrollToElement, getValueAttribute,
-  getAllElements, areElementsDisplayed,
-  isSelected, isEnabled, isVisible,
-  countVisibleElements } from "./func/index.js";
+import {
+  getUrl,
+  goToUrl,
+  scrollToElement,
+  getValueAttribute,
+  getAllElements,
+  areElementsDisplayed,
+  isSelected,
+  isEnabled,
+  isVisible,
+  countVisibleElements,
+} from "./func/index.js";
 
 export const taf = {
-  goToUrl, getUrl,
-  scrollToElement, getValueAttribute,
-  getAllElements, areElementsDisplayed,
-  isSelected, isEnabled, isVisible,
-  countVisibleElements
-
+  goToUrl,
+  getUrl,
+  scrollToElement,
+  getValueAttribute,
+  getAllElements,
+  areElementsDisplayed,
+  isSelected,
+  isEnabled,
+  isVisible,
+  countVisibleElements,
 };
 
 export async function test(name, callback) {
@@ -28,8 +39,6 @@ export async function test(name, callback) {
     state = 0;
     end = performance.now();
   } finally {
-    state = 1;
-    console.log(end, start);
     generate(name, end - start, state);
     //clear self
     finalize();
