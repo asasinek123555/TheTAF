@@ -1,11 +1,18 @@
 
 // imports
 import { finalize } from "./util.js";
-import { getUrl, goToUrl, scrollToElement } from "./func/index.js";
+import { getUrl, goToUrl, 
+  scrollToElement, getValueAttribute,
+  getAllElements, areElementsDisplayed,
+  isSelected, isEnabled, isVisible,
+  countVisibleElements } from "./func/index.js";
 
 export const taf = {
   goToUrl, getUrl,
-  scrollToElement,
+  scrollToElement, getValueAttribute,
+  getAllElements, areElementsDisplayed,
+  isSelected, isEnabled, isVisible,
+  countVisibleElements
 };
 
 export async function test(name, callback) {
