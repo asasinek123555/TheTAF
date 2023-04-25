@@ -12,7 +12,11 @@ export async function finalize(results) {
         `Czas trwania testu ${chalk.yellow((performance * 1000).toFixed(2))} s
         \n• ${data.map(
           (d) => `${d.name} ${d.result ? "✅" : "❌"}  \n`
-        )}`.replace(",", "• "),
+        )}`.replace(",", "• ") +
+          `\nWynik: ${data.map((d) => (d.result ? "🟩" : "🟥"))}`.replace(
+            ",",
+            ""
+          ),
         {
           borderStyle: "round",
           margin: 1,
