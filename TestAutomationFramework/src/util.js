@@ -9,14 +9,11 @@ export async function finalize(results) {
   if (raport === "console") {
     console.log(
       boxen(
-        `Czas trwania testu ${chalk.yellow((performance * 1000).toFixed(2))} s
-        \n• ${data.map(
-          (d) => `${d.name} ${d.result ? "✅" : "❌"}  \n`
-        )}`.replace(",", "• ") +
-          `\nWynik: ${data.map((d) => (d.result ? "🟩" : "🟥"))}`.replace(
-            ",",
-            ""
-          ),
+        `Czas trwania testu ${chalk.yellow((performance * 1000).toFixed(2))}s
+        \n${data.map(
+          (d) => `• ${d.name} ${d.result ? "✅" : "❌"}  \n`
+        )}`.replaceAll(",", "") +
+          `\n${data.map((d) => (d.result ? "🟩" : "🟥"))}`.replaceAll(",", ""),
         {
           borderStyle: "round",
           margin: 1,
