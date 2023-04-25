@@ -1,5 +1,6 @@
 // imports
 import { finalize } from "./util.js";
+
 import {
   getUrl,
   goToUrl,
@@ -14,18 +15,14 @@ import {
   findAndClick,
 } from "./func/index.js";
 
+
 export const taf = {
-  goToUrl,
-  getUrl,
-  scrollToElement,
-  getValueAttribute,
-  getAllElements,
-  areElementsDisplayed,
-  isSelected,
-  isEnabled,
-  isVisible,
-  countVisibleElements,
-  findAndClick,
+  goToUrl, getUrl,
+  scrollToElement, getValueAttribute,
+  getAllElements, areElementsDisplayed,
+  isSelected, isEnabled, isVisible,
+  countVisibleElements, findAndSelect,
+  findAndSelectAll, findAndClick
 };
 
 export function test(name, callback, raport = "console") {
