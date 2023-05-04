@@ -12,3 +12,8 @@ export { countVisibleElements } from "./element/countVisibleElements.js"
 export { findAndClick } from "./buttons/findAndClick.js";
 export { findAndSelect } from "./checkboxes/findAndSelect.js"
 export { findAndSelectAll } from "./checkboxes/findAndSelectAll.js"
+export { waitForElementToHide } from "./wait/waitForElementToHide.js"
+export { waitForElementToBeDisplayed } from "./wait/waitForElementToBeDisplayed.js"
+export { waitForElementToBeEnable } from "./wait/waitForElementToBeEnable.js"
+export { waitForElementContainingTextToBeDisplayed } from "./wait/waitForElementContainingTextToBeDisplayed.js"
+export { waitAndClickElementContainsText } from "./wait/waitAndClickElementContainsText.js"

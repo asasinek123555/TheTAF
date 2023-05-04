@@ -15,6 +15,11 @@ import {
   findAndClick,
   findAndSelect,
   findAndSelectAll,
+  waitForElementToHide,
+  waitForElementToBeDisplayed,
+  waitForElementToBeEnable,
+  waitForElementContainingTextToBeDisplayed,
+  waitAndClickElementContainsText,
 } from "./func/index.js";
 
 export const taf = {
@@ -31,6 +36,11 @@ export const taf = {
   findAndSelect,
   findAndSelectAll,
   findAndClick,
+  waitForElementToHide,
+  waitForElementToBeDisplayed,
+  waitForElementToBeEnable,
+  waitForElementContainingTextToBeDisplayed,
+  waitAndClickElementContainsText,
 };
 
 export function test(name, callback, raport = "console") {
