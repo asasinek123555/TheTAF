@@ -1,6 +1,6 @@
 // imports
 import { finalize } from "./util.js";
-import { generate } from "./util.js";
+
 import {
   getUrl,
   goToUrl,
@@ -12,6 +12,9 @@ import {
   isEnabled,
   isVisible,
   countVisibleElements,
+  findAndClick,
+  findAndSelect,
+  findAndSelectAll,
 } from "./func/index.js";
 
 export const taf = {
@@ -25,23 +28,24 @@ export const taf = {
   isEnabled,
   isVisible,
   countVisibleElements,
+  findAndSelect,
+  findAndSelectAll,
+  findAndClick,
 };
 
-export async function test(name, callback) {
-  let start, end, state;
+export function test(name, callback, raport = "console") {
+  let start, end;
+  start = performance.now();
+  const data = callback;
+  end = performance.now();
 
-  try {
-    start = performance.now();
-    //call callback and measure time
-    await callback();
-    end = performance.now();
-    state = 1;
-  } catch (error) {
-    state = 0;
-    end = performance.now();
-  } finally {
-    generate(name, end - start, state);
-    //clear self
-    finalize();
-  }
+  finalize({ name, data, raport, performance: end - start });
 }
+
+export const it = (...args) => {
+  return args;
+};
+
+export const describe = (name, result) => {
+  return { name, result };
+};

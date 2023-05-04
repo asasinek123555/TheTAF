@@ -1,10 +1,12 @@
 import { driver } from "../../util.js";
 import { By } from "selenium-webdriver";
 
-export const getAllElements = async (elem) => {
+export const findAndClick = async (elem) => {
   try {
-    return await driver.findElements(By.css(elem));
+    await driver.findElement(By.css(elem)).click();
   } catch (error) {
     return false;
   }
+
+  return true;
 };
