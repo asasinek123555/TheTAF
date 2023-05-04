@@ -17,6 +17,9 @@ import {
   findAndSelectAll,
   clear,
   inputText,
+  findAndCheckValue,
+  getTextFromAllElements,
+  getTextFromInnerHTML,
 } from "./func/index.js";
 
 export const taf = {
@@ -35,6 +38,9 @@ export const taf = {
   findAndClick,
   clear,
   inputText,
+  findAndCheckValue,
+  getTextFromAllElements,
+  getTextFromInnerHTML,
 };
 
 export function test(name, callback, raport = "console") {
