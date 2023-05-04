@@ -1,6 +1,5 @@
 export { goToUrl } from "./others/goToUrl.js";
 export { getUrl } from "./others/getUrl.js";
-
 export { scrollToElement } from "./element/scrollToElement.js";
 export { getValueAttribute } from "./element/getValueAttribute.js";
 export { getAllElements } from "./element/getAllElements.js";
@@ -16,3 +15,6 @@ export { clear } from "./inputs/clear.js";
 export { inputText } from "./inputs/inputText.js";
 export { findAndCheckValues } from "./checkboxes/findAndCheckValues.js"
 export { findAndCheckMultiple } from "./checkboxes/findAndCheckMultiple.js"
+export { findAndCheckValue } from "./textFields/findAndCheckValue.js";
+export { getTextFromInnerHTML } from "./textFields/getTextFromInnerHTML.js";
+export { getTextFromAllElements } from "./textFields/getTextFromAllElements.js";
