@@ -1,6 +1,6 @@
 import { driver } from "../../util";
 
-export const getTextFromInnerHTML = async (elem) => {
+export const findAndCheckValue = async (elem) => {
   try {
     return await driver.findElement(elem).getAttribute("value");
   } catch (error) {
