@@ -14,3 +14,5 @@ export { findAndSelect } from "./checkboxes/findAndSelect.js";
 export { findAndSelectAll } from "./checkboxes/findAndSelectAll.js";
 export { clear } from "./inputs/clear.js";
 export { inputText } from "./inputs/inputText.js";
+export { findAndCheckValues } from "./checkboxes/findAndCheckValues.js"
+export { findAndCheckMultiple } from "./checkboxes/findAndCheckMultiple.js"
