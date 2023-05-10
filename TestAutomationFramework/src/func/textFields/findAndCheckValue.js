@@ -1,4 +1,4 @@
-import { driver } from "../../util";
+import { driver } from "../../util.js";
 
 export const findAndCheckValue = async (elem) => {
   try {

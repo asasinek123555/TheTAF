@@ -1,7 +1,7 @@
 import { driver } from "../../util.js";
 import { By } from "selenium-webdriver";
 
-export const findAndCheckValues = async (elem, values) => {
+export const findAndCheckMultiple = async (elem, values) => {
   try {
     const elements = await driver.findElements(By.css(elem));
     for (let element of elements){

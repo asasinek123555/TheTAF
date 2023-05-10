@@ -18,3 +18,5 @@ export { findAndCheckMultiple } from "./checkboxes/findAndCheckMultiple.js"
 export { findAndCheckValue } from "./textFields/findAndCheckValue.js";
 export { getTextFromInnerHTML } from "./textFields/getTextFromInnerHTML.js";
 export { getTextFromAllElements } from "./textFields/getTextFromAllElements.js";
+export { selectOptionByText } from "./dropdown/selectOptionByText.js"
+export { selectOptionByValue } from "./dropdown/selectOptionByValue.js";
