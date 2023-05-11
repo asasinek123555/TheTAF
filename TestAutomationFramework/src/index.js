@@ -26,6 +26,9 @@ import {
   findAndCheckMultiple,
   findAndCheckValue,
   getTextFromAllElements,
+  getTextFromInnerHTML,
+  selectOptionByText,
+  selectOptionByValue,
 } from "./func/index.js";
 
 export const taf = {
@@ -54,6 +57,8 @@ export const taf = {
   findAndCheckValue,
   getTextFromAllElements,
   getTextFromInnerHTML,
+  selectOptionByText,
+  selectOptionByValue,
 };
 
 export function test(name, callback, raport = "console") {
