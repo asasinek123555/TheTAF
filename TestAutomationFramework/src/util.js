@@ -1,7 +1,7 @@
 import { Builder } from "selenium-webdriver";
 import chalk from "chalk";
 import boxen from "boxen";
-export const driver = new Builder().forBrowser("firefox").build();
+export const driver = new Builder().forBrowser("chrome").build();
 
 export async function finalize(results) {
   const { name, data, raport, performance } = results;
