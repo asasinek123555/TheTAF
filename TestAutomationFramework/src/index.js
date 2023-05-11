@@ -15,6 +15,13 @@ import {
   findAndClick,
   findAndSelect,
   findAndSelectAll,
+  clear,
+  inputText,
+  findAndCheckValues,
+  findAndCheckMultiple,
+  findAndCheckValue,
+  getTextFromAllElements,
+  getTextFromInnerHTML
 } from "./func/index.js";
 
 export const taf = {
@@ -31,6 +38,14 @@ export const taf = {
   findAndSelect,
   findAndSelectAll,
   findAndClick,
+  clear,
+  inputText,
+  findAndCheckValues,
+  findAndCheckMultiple,
+  findAndCheckValue,
+  getTextFromAllElements,
+  getTextFromInnerHTML,
+
 };
 
 export function test(name, callback, raport = "console") {
@@ -48,4 +63,8 @@ export const it = (...args) => {
 
 export const describe = (name, result) => {
   return { name, result };
+};
+
+export const wait = (time) => {
+  return new Promise((resolve) => setTimeout(() => resolve(true), time));
 };
