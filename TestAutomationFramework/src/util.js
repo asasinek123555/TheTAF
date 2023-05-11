@@ -13,7 +13,9 @@ export async function finalize(results) {
         \n${data.map(
           (d) => `• ${d.name} ${d.result ? "✅" : "❌"}  \n`
         )}`.replaceAll(",", "") +
-          `\n${data.map((d) => (d.result ? "🟩" : "🟥"))}`.replaceAll(",", ""),
+          `\n${data.filter((d) => d.result === true).length}/${
+            data.length
+          } testów przeszło pomyślnie`,
         {
           borderStyle: "round",
           margin: 1,
