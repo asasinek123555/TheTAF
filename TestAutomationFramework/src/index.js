@@ -15,13 +15,17 @@ import {
   findAndClick,
   findAndSelect,
   findAndSelectAll,
+  waitForElementToHide,
+  waitForElementToBeDisplayed,
+  waitForElementToBeEnable,
+  waitForElementContainingTextToBeDisplayed,
+  waitAndClickElementContainsText,
   clear,
   inputText,
   findAndCheckValues,
   findAndCheckMultiple,
   findAndCheckValue,
   getTextFromAllElements,
-  getTextFromInnerHTML
 } from "./func/index.js";
 
 export const taf = {
@@ -38,6 +42,11 @@ export const taf = {
   findAndSelect,
   findAndSelectAll,
   findAndClick,
+  waitForElementToHide,
+  waitForElementToBeDisplayed,
+  waitForElementToBeEnable,
+  waitForElementContainingTextToBeDisplayed,
+  waitAndClickElementContainsText,
   clear,
   inputText,
   findAndCheckValues,
@@ -45,7 +54,6 @@ export const taf = {
   findAndCheckValue,
   getTextFromAllElements,
   getTextFromInnerHTML,
-
 };
 
 export function test(name, callback, raport = "console") {

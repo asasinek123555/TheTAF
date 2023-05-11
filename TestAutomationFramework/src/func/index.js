@@ -18,3 +18,8 @@ export { findAndCheckMultiple } from "./checkboxes/findAndCheckMultiple.js"
 export { findAndCheckValue } from "./textFields/findAndCheckValue.js";
 export { getTextFromInnerHTML } from "./textFields/getTextFromInnerHTML.js";
 export { getTextFromAllElements } from "./textFields/getTextFromAllElements.js";
+export { waitForElementToHide } from "./wait/waitForElementToHide.js"
+export { waitForElementToBeDisplayed } from "./wait/waitForElementToBeDisplayed.js"
+export { waitForElementToBeEnable } from "./wait/waitForElementToBeEnable.js"
+export { waitForElementContainingTextToBeDisplayed } from "./wait/waitForElementContainingTextToBeDisplayed.js"
+export { waitAndClickElementContainsText } from "./wait/waitAndClickElementContainsText.js"
