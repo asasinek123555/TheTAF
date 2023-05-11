@@ -1,10 +1,11 @@
-import { test, it, describe, taf } from "./src/index.js";
+import { test, it, describe, taf, wait } from "./src/index.js";
 
 test(
   "Connect to site",
   it(
-    describe("idz do google", await taf.goToUrl("https://www.google.com")),
-    describe("idz do google", await taf.goToUrl("https://www.google.com"))
+    describe("idz", await taf.goToUrl("https://www.selenium.dev/selenium/web/selectPage.html")),
+    describe("zaznacz", await taf.selectOptionByValueMulti("#selectWithEmptyStringMultiple", 'two')),
+    describe("czekaj", await wait(3000))
   )
 );
 // https://www.selenium.dev/documentation/webdriver/actions_api/wheel/
