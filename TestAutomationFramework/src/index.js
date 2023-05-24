@@ -30,6 +30,11 @@ import {
   getTextFromInnerHTML,
   selectOptionByText,
   selectOptionByValue,
+  selectMultipleOptionsByText,
+  selectMultipleOptionsByValue,
+  selectAllOptions,
+  selectOptionByTextMulti,
+  selectOptionByValueMulti,
 } from "./func/index.js";
 
 export const taf = {
@@ -61,6 +66,11 @@ export const taf = {
   getTextFromInnerHTML,
   selectOptionByText,
   selectOptionByValue,
+  selectMultipleOptionsByText,
+  selectMultipleOptionsByValue,
+  selectAllOptions,
+  selectOptionByTextMulti,
+  selectOptionByValueMulti,
 };
 
 export function test(name, callback, raport = "console") {
