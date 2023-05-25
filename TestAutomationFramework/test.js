@@ -5,7 +5,8 @@ test(
   it(
     describe("idz do google", await taf.goToUrl("https://www.google.com")),
     describe("idz do google", await taf.goToUrl("https://www.google.com"))
-  )
+  ),
+  "html"
 );
 // https://www.selenium.dev/documentation/webdriver/actions_api/wheel/
 // await taf.scrollToElement('#scroll-from-an-element-by-a-given-amount')
