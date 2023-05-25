@@ -26,3 +26,8 @@ export { waitForElementToBeDisplayed } from "./wait/waitForElementToBeDisplayed.
 export { waitForElementToBeEnable } from "./wait/waitForElementToBeEnable.js"
 export { waitForElementContainingTextToBeDisplayed } from "./wait/waitForElementContainingTextToBeDisplayed.js"
 export { waitAndClickElementContainsText } from "./wait/waitAndClickElementContainsText.js"
+export { selectMultipleOptionsByText } from "./multidropdown/selectMultipleOptionsByText.js"
+export { selectMultipleOptionsByValue } from "./multidropdown/selectMultipleOptionsByValue.js"
+export { selectAllOptions } from "./multidropdown/selectAllOptions.js"
+export { selectOptionByText as selectOptionByTextMulti } from "./multidropdown/selectOptionByText.js"
+export { selectOptionByValue as selectOptionByValueMulti } from "./multidropdown/selectOptionByValue.js"
