@@ -113,7 +113,23 @@ export async function finalize(results) {
           display:flex;
           flex-direction:column;
         }
-    
+        li:empty{
+          display:none;
+        }
+        li:last-child{
+          display:none;
+        }
+        ol{
+          display:flex;
+          flex-direction:column;
+          gap:10px;
+          font-size:32px;
+        }
+        .performance{
+        margin-top:200px;
+        }
+      
+     
       </style>
     </head>
     <body>
@@ -121,10 +137,12 @@ export async function finalize(results) {
       <div class="results">
       <h1>${name}</h1>
       <div class="items">
-      <ul>
-      ${htmlData.join("")}
-      </ul>
-  
+        <ol>
+          ${htmlData.join("")}
+        </ol>
+        <span class="performance">Czas trwania testu ${(
+          performance * 1000
+        ).toFixed(2)}s</span>
       </div>
       </div>
         
