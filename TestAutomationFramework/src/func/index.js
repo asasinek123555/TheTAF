@@ -9,6 +9,9 @@ export { isEnabled } from "./element/isEnabled.js";
 export { isVisible } from "./element/isVisible.js";
 export { countVisibleElements } from "./element/countVisibleElements.js";
 export { findAndCheckValue as findAndCheckValueRadio } from "./radioButtons/findAndCheckValue.js"
+export { findAndCheckMultiple as findAndCheckMultipleRadio } from "./radioButtons/findAndCheckMultiple.js"
+export { findAndSelect as findAndCheckSelectRadio } from "./radioButtons/findAndSelect.js"
+export { findAndSelectAll as findAndSelectAllRadio } from "./radioButtons/findAndSelectAll.js"
 export { findAndCheckValue } from "./textFields/findAndCheckValue.js"
 export { findAndClick } from "./buttons/findAndClick.js";
 export { findAndSelect } from "./checkboxes/findAndSelect.js";
