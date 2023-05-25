@@ -28,9 +28,11 @@ export async function finalize(results) {
       )
     );
   } else {
+    console.log(data);
+
     // Prepare data for the chart
-    const passCount = data.filter((d) => d.result === true).length;
-    const failCount = data.filter((d) => d.result === false).length;
+    const passCount = data.filter((d) => d.result).length;
+    const failCount = data.filter((d) => !d.result).length;
     const htmlData = data.map(
       (d) => `<li class=${d.result ? "success" : "fail"}> ${d.name}<li>`
     );
@@ -46,7 +48,6 @@ export async function finalize(results) {
           padding: 0;
           box-sizing: border-box;
           background-color: rgb(55 65 81);
-          overflow:hidden;
           font-family: arial;
           color:#FFF;
         }
@@ -101,6 +102,7 @@ export async function finalize(results) {
         .performance{
           font-size:20px;
           font-weight:bold;
+          margin-bottom:4rem;
         }
         .success{
           color:#4CAF50;
@@ -109,7 +111,6 @@ export async function finalize(results) {
           color:#FF5722;
         }
         .items{
-          margin-top:4rem;
           display:flex;
           flex-direction:column;
         }
@@ -125,9 +126,7 @@ export async function finalize(results) {
           gap:10px;
           font-size:32px;
         }
-        .performance{
-        margin-top:200px;
-        }
+
       
      
       </style>

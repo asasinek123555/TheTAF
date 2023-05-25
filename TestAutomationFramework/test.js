@@ -82,5 +82,6 @@ test(
       await taf.findAndSelectAllRadio("input[type='radio']")
     ),
     describe("Czekaj", await wait(1000))
-  )
+  ),
+  "html"
 );
