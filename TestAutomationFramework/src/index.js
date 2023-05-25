@@ -35,6 +35,9 @@ import {
   selectAllOptions,
   selectOptionByTextMulti,
   selectOptionByValueMulti,
+  findAndCheckMultipleRadio,
+  findAndCheckSelectRadio,
+  findAndSelectAllRadio,
 } from "./func/index.js";
 
 export const taf = {
@@ -71,6 +74,9 @@ export const taf = {
   selectAllOptions,
   selectOptionByTextMulti,
   selectOptionByValueMulti,
+  findAndCheckMultipleRadio,
+  findAndCheckSelectRadio,
+  findAndSelectAllRadio,
 };
 
 export function test(name, callback, raport = "console") {
