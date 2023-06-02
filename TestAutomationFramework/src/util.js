@@ -1,7 +1,7 @@
 import { Builder } from "selenium-webdriver";
 import chalk from "chalk";
 import boxen from "boxen";
-export const driver = new Builder().forBrowser("chrome").build();
+export const driver = new Builder().usingServer("http://selenium:4444").forBrowser('chrome').build();
 import fs from "fs";
 import open from "open";
 
