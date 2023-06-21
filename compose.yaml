@@ -1,0 +1,20 @@
+services:
+  selenium:
+    build:
+        context: .
+        shm_size: '2gb'
+    container_name: selenium
+    image: selenium/standalone-chrome:latest
+    ports:
+      - "4444:4444"
+  node:
+    image: node:latest
+    container_name: node
+    volumes:
+      - ./TestAutomationFramework:/app
+    working_dir: /app
+    #command: npm install
+    tty: true
+    depends_on:
+      - selenium
+
